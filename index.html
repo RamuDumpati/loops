@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // -----------------------------------------------------------
+    //   Data types of JAVASCRIPT
+
+        // var a=2
+        // console.log(a)
+        // var a=10
+        // console.log(a)
+        // var b=123
+        // var b=500
+        // console.log(b)
+        // console.log(a)
+        // console.log(b)
+        // document.write("value of a is",a)
+
+        // let a=12
+        // console.log(a,typeof(a))
+
+        // let b=20.5
+        // console.log(b,typeof(b))
+        // let c='ram'
+        // console.log(c,typeof(c))
+        // let doublestring ="RAMU dumpati"
+        // console.log(doublestring,typeof(doublestring))
+
+        // const a=100
+        // console.log(a)
+        // const b=200
+        // console.log(b)
+
+        // let ramu=true
+        // let sai=false
+        // let krishna=0
+        // console.log(ramu,typeof(ramu))
+        // console.log(sai,typeof(sai))
+        // console.log(krishna,typeof(0))
+
+        // let ramu=null
+        // console.log(ramu,typeof(ramu))
+        // const hero=null
+        // console.log(hero,typeof(hero))
+
+        // let undefinedDT
+        // console.log(undefinedDT,typeof(undefinedDT))
+
+        // let symboldt=Symbol("ramu")
+        // let symboldt1=Symbol('')
+        // console.log(symboldt1,typeof(symboldt1))
+        // console.log(symboldt,typeof(symboldt))
+
+    //     let symbolDT=Symbol()
+    // let symbolDT1=Symbol('unique')
+    // console.log('value of symbol is',symbolDT1,'type of symbol is',typeof(symbolDT1))
+
+// non primitive data types 
+
+//    let person ={
+//     name:'RAMU',
+//     rollno: 12,
+//     age:20
+    
+//    }
+//    console.log(person)
+
+    // let class1 ={
+    //     name: "cse a",
+    //     batch: 39,
+    //     age: 20
+    // }
+
+    // arrays
+    // let array1= new Array();
+    // let array2=new Array(5);
+    // let array3=new Array(1,2,3,'Ram');
+    // console.log(array1,typeof(array1))
+    // console.log(array2,typeof(array2))
+    // console.log(array3,typeof(array3))
+
+//   let arr=[0,1,2,3,4,'ramu'];
+//   console.log(arr,typeof(arr))
+
+// let currentDate=new Date()
+// console.log(currentDate,typeof(currentDate))
+
+// ----------------------------------------------------------------------
+// operators
+// assignment opeartors
+// let a=20
+// let b=10
+// a+=b
+// console.log(a)
+// let c=20
+// let d=10
+// d-=c
+// console.log(d)
+
+// comparison operators
+// let p=2
+// let q=3
+// console.log(p<q)
+// console.log(p>q)
+// console.log(p<=q)
+// console.log(p>=q)
+// let r=20
+// let s="20"
+// console.log(r==s)
+// console.log(r===s)
+
+// unary operators preincrement pre decrement
+//   let x=100
+//   console.log(x)
+//   console.log(++x)
+//   console.log(x)
+//   console.log(--x)
+
+//unary operators postincrement post decrement
+let z=100
+// console.log(z)
+// console.log(z++)
+// console.log(z)
+// console.log(z)
+// console.log(z--)
+// console.log(z)
+
+// bitwise operator they will represent as 0 and 1s
+let e=1
+let f=2
+console.log(e&f)
+console.log(e|f)
+console.log(e^f)
+
+// logical operators
+// let g=true
+// let h=false
+// console.log(g&&h)
+// console.log(g||h)
+// console.log(g^h)
+
+// Ternary oparators
+// let vehicle='car'
+// let modal=(vehicle=='cycle')?'It is a vehicle':'it is not a vehicle'
+// console.log(modal)
+// let age=25
+// let vote=(age<=20)?'YOU CAN VOTE':"you cannot vote"
+// console.log(vote)
+
+// let modal="bike"
+// let vehicle=(modal=='car')?'It is  a car':'it is not a car'
+// console.log(vehicle)
+
+
+// display time of user
+
+// let hour=prompt("enter the time")
+// // let hour='12'
+// if(hour=='12'){
+//     a="goodafternoon"
+//     console.log("the time is 12",a)
+// }else{
+//     b="goodevening"
+//     console.log("the time is 13",b)
+// }
+
+// let hour=parseInt(prompt("enter the time"))
+// let hour;
+// if(hour < 12){
+//     a='GOOD MORNING'
+//     console.log('THE TIME IS',a)
+// }else if(hour > 12){
+//     b='GOOD AFTERNOON'
+//     console.log('THE TIME IS',b)
+// }else {
+//     c='GOOD EVENING'
+//     console.log('THE TIME IS',c)
+// }
+
+// Switch statement
+// let traffic_light='purple'
+// let message;
+// switch(traffic_light){
+//     case 'red':
+//     message='STOP IMMEDIATELY'
+//     break;
+
+//     case 'green':
+//     message='GO SLOWLY'
+//     break;
+
+//     case 'orange':
+//     message='footpath way'
+//     break;
+
+//     case 'blue':
+//     message='STOP IMMEDIATELY and wait'
+//     break;
+
+//     default:
+//         message='YOUR BIKE IS SEIZED'
+// }
+// console.log(message)
+
+
+// calculator
+
+let number1=prompt("Enter the first number")
+let number2=prompt("Enter the second number")
+
+const operator = prompt("Enter a operator (+, -, * or / ): ");
+
+switch(operator){
+    
+    case '+':
+    result=number1 + number2;
+    console.log(result)
+    break;
+
+    case '-':
+    result=number1 - number2;
+    console.log(result)
+    break;
+
+    case '*':
+    result=number1 * number2;
+    console.log(result)
+    break;
+
+    case '/':
+    result=number1 / number2;
+    console.log(result)
+    break;
+
+    case '%':
+    result=number1 % number2;
+    console.log(result)
+    break;
+
+    default:
+    console.log('Undefined')
+}
+
+
+
+
+</script>
+</body>
+</html>
