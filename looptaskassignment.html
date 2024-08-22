@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Control Flow and Looping - For Loop and While Loop</h1>
+</body>
+<script>
+    // 1.Multiplication table
+    let printtable=5;
+    for(let n=1;n<=10;n++){
+      let result=printtable * n;
+      console.log(printtable +'x' +n +'=' +result);
+    }
+
+    // 2..Sum of Even Numbers Between 1 and 50
+    let sumtotal=0;
+    for(let z=1;z<=50;z++){
+        if(z%2==0){
+            sumtotal += z; 
+        }  
+    }
+    console.log('Sum of Even Numbers Between 1 and 50 are: '+ sumtotal)
+
+    // While Loop
+    // 1.Countdown timer
+    let num = 2;
+    while (num <= 20) {
+    let Primenumber = true;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            Primenumber = false;
+            break;
+        }
+    }
+    if (Primenumber) {
+        console.log(num);
+    }
+    num++;
+}
+
+// 2.Sum of Odd Numbers
+let number = 1;
+let sum = 0;
+while (number <= 20) {
+    sum += number; 
+    number += 2;   
+}
+console.log("The sum of all odd numbers between 1 and 20 is: " + sum);
+   
+// Factorial Calculation
+
+let num1 = 5; 
+let factorial = 1;
+let i = num1; //here num1=5 where it is equal to 5
+while (i > 0) {//5>0 then 1=1*5=5 then 5--=4
+    factorial = factorial*i; 
+    i--;            
+}
+console.log("The factorial of " + num1 + " is: " + factorial);
+
+
+      
+</script>
+</html>
